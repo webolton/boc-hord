@@ -1,24 +1,18 @@
-# README
+# Boc-hord
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple application for cataloging PDFs, books, and other media.
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
+- Ruby 3.4 (use rvm)
+- Rails 8.0
 
-* System dependencies
+## Development
 
-* Configuration
+### Run the linter
 
-* Database creation
+`rubocop`
 
-* Database initialization
+### Run the view linter
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`slim-lint app/views/`
