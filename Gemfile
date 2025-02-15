@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'bootsnap', require: false
+gem 'dartsass-rails'
 gem 'importmap-rails'
 gem 'propshaft'
 gem 'puma'
