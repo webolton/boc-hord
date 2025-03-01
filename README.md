@@ -9,10 +9,17 @@ A simple application for cataloging PDFs, books, and other media.
 
 ## Development
 
-### Run the linter
+### Run the development webserver
+`rails server`
 
+### Run the Sass compiler
+`rails dartsass:watch`
+
+### Run the development webserver + Sass compiler
+`bin/dev`
+
+### Run the linter
 `rubocop`
 
 ### Run the view linter
-
 `slim-lint app/views/`
