@@ -1,2 +1,4 @@
-@import 'main';
-@import 'header';
+@use 'variables';
+@use 'main';
+@use 'header';
+@use 'sidenav';
