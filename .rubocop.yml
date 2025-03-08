@@ -3,6 +3,7 @@ require: rubocop-rails
 AllCops:
   NewCops: enable
   TargetRailsVersion: 8.0
+  SuggestExtensions: false
 
 Style/Documentation:
   Enabled: false
