@@ -16,6 +16,10 @@ gem 'thruster', require: false
 group :development, :test do
   gem 'brakeman', require: false
   gem 'pry'
+  gem 'rubocop-rails'
+end
+
+group :test do
+  gem 'capybara'
   gem 'rspec-rails'
-  gem 'rubocop-rails', require: false
 end
