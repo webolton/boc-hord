@@ -1,2 +1,4 @@
 en:
   title: Boc-hord
+  global:
+    new_record: "New %{record_name}"

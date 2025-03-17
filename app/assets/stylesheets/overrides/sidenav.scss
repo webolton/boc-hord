@@ -3,26 +3,34 @@
   top: 60px;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 250px;
   z-index: 996;
   transition: all 0.3s;
   padding: 20px;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: var(--primary-color-30) transparent;
+  scrollbar-color: var(--bs-primary-30) transparent;
   box-shadow: 0px 0px 5px rgba(1, 41, 112, 0.1);
   clip-path: inset(0px -5px -5px -5px);
 }
 
 @media (max-width: 1199px) {
   .sidebar {
-    left: -300px;
+    left: -250px;
   }
 }
 
 .sidebar::-webkit-scrollbar {
   width: 5px;
   height: 8px;
+  background-color: var(--bs-white);
+}
+
+@media (min-width: 1200px) {
+  #main,
+  #footer {
+    margin-left: 250px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -32,12 +40,14 @@
 }
 
 @media (min-width: 1200px) {
+
   .toggle-sidebar #main,
   .toggle-sidebar #footer {
     margin-left: 0;
   }
+
   .toggle-sidebar .sidebar {
-    left: -300px;
+    left: -250px;
   }
 }
 
@@ -60,7 +70,7 @@
 .sidebar-nav .nav-heading {
   font-size: 11px;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--bs-primary);
   font-weight: 600;
   margin: 10px 0 5px 15px;
 }
@@ -70,9 +80,9 @@
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--bs-primary);
   transition: 0.3;
-  background: var(--primary-color-10);
+  background: var(--bs-primary-10);
   padding: 10px 15px;
   border-radius: 4px;
 }
@@ -80,25 +90,25 @@
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color: var(--primary-color);
+  color: var(--bs-primary);
 }
 
 .sidebar-nav .nav-link.collapsed {
-  color: var(--primary-color);
-  background: #fff;
+  color: var(--bs-primary);
+  background: var(--bs-white);
 }
 
 .sidebar-nav .nav-link.collapsed i {
-  color: #899bbd;
+  color: var(--bs-primary-50);
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #4154f1;
-  background: #f6f9ff;
+  color: var(--bs-secondary-90);
+  background: var(--bs-primary-05);
 }
 
 .sidebar-nav .nav-link:hover i {
-  color: #4154f1;
+  color: var(--bs-secondary-90);
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -121,7 +131,7 @@
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  color: #012970;
+  color: var(--bs-primary);
   transition: 0.3;
   padding: 10px 0 10px 40px;
   transition: 0.3s;
@@ -136,9 +146,9 @@
 
 .sidebar-nav .nav-content a:hover,
 .sidebar-nav .nav-content a.active {
-  color: #4154f1;
+  color: var(--bs-secondary-90);
 }
 
 .sidebar-nav .nav-content a.active i {
-  background-color: #4154f1;
+  color: var(--bs-secondary-90);
 }
