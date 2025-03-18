@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_03_15_173938) do
+ActiveRecord::Schema[8.0].define(version: 2025_03_18_003501) do
   create_table "authors", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -24,7 +24,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_03_15_173938) do
   end
 
   create_table "entries", force: :cascade do |t|
-    t.string "full_title"
+    t.text "full_title"
     t.datetime "publication_date"
     t.integer "start_page"
     t.integer "end_page"
