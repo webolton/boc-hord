@@ -27,7 +27,7 @@
 }
 
 @media (min-width: 1200px) {
-  #main,
+  main,
   #footer {
     margin-left: 250px;
   }
@@ -41,7 +41,7 @@
 
 @media (min-width: 1200px) {
 
-  .toggle-sidebar #main,
+  .toggle-sidebar main,
   .toggle-sidebar #footer {
     margin-left: 0;
   }
