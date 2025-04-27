@@ -11,7 +11,9 @@ gem 'rails', '~> 8.0.1'
 gem 'slim'
 gem 'slim_lint'
 gem 'sqlite3'
+gem 'stimulus-rails'
 gem 'thruster', require: false
+gem 'turbo-rails'
 
 group :development, :test do
   gem 'brakeman', require: false
