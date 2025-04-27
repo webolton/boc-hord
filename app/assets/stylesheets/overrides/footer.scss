@@ -1,0 +1,12 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+  transition: all 0.3s;
+  border-top: 1px solid var(--bs-primary-10);
+}
+
+footer .copyright, footer .credits {
+  text-align: center;
+  color: var(--bs-primary-40);
+}

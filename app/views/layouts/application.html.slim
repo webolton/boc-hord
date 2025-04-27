@@ -1,7 +1,9 @@
 doctype html
 html
   = render 'layouts/head'
-  body
+  body.d-flex.flex-column.min-vh-100
     = render 'layouts/navigation/header'
     = render 'layouts/navigation/sidenav'
-    = yield
+    main
+      = yield
+    = render 'layouts/footer'

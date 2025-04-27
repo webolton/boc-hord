@@ -1,2 +1,11 @@
 en:
   title: Boc-hord
+  global:
+    new_record: "New %{record_name}"
+    copyright: "Copyright William E. Bolton, PhD. All Rights Reserved."
+    website_cta: "For more on the developer, see "
+    website_link: "https://william-bolton.com"
+  entries:
+    form:
+      labels:
+        full_title: 'Full Title'

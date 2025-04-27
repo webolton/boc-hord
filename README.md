@@ -23,3 +23,7 @@ A simple application for cataloging PDFs, books, and other media.
 
 ### Run the view linter
 `slim-lint app/views/`
+
+### Run the javascript linter
+
+`npx standard`
