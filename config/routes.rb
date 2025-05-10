@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   get 'up' => 'rails/health#show', as: :rails_health_check
   root 'dashboard#index'
 
-  resources :authors
+  resources :authors do
+    collection do
+      get 'new_modal'
+    end
+  end
+
   resources :entries
 end
