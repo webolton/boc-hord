@@ -9,3 +9,7 @@ en:
     form:
       labels:
         full_title: 'Full Title'
+  errors:
+    record:
+      list:
+        "%{error_pluralized} prohibited this %{record_name} from being saved:"

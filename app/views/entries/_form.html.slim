@@ -1,8 +1,10 @@
+- if @entry.errors.any?
+  = render 'shared/record_errors', record: @entry
 = form_with model: @entry, html: { class: 'g-3' } do |form|
   .col-6
     label.form-label.mb-0.pb-2.pt-1
       | Author
-    = turbo_frame_tag 'first_turbo_frame'
+    = turbo_frame_tag 'new_author_modal'
       = link_to 'New author', new_modal_authors_path, { class: 'btn btn-link text-end pb-2 pt-1 border-0' }
   .col-6
     input.form-control[type="text_area" rows="3"]

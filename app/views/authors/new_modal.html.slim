@@ -1,3 +1,4 @@
-= turbo_frame_tag 'first_turbo_frame' do
+= turbo_frame_tag 'new_author_modal' do
+  = link_to 'New author', new_modal_authors_path, { class: 'btn btn-link text-end pb-2 pt-1 border-0' }
   div[data-controller='authors-modal']
     = render 'form', author: @author

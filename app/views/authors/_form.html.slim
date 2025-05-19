@@ -6,13 +6,18 @@
           = t('global.new_record', record_name: 'author')
         button.btn-close[type="button" data-bs-dismiss="modal" aria-label="Close"]
       .modal-body
+        - if @author.errors.any?
+          = render 'shared/record_errors', record: @author
         = form_with model: @author, local: true do |form|
           .mb-3
             = form.label :last_name, class: 'form-label'
             = form.text_field :last_name, class: 'form-control'
           .mb-3
             = form.label :first_name, class: 'form-label'
-            = form.email_field :first_name, class: 'form-control'
+            = form.text_field :first_name, class: 'form-control'
+          .mb-3
+            = form.label :distinction, class: 'form-label'
+            = form.text_field :distinction, class: 'form-control'
           .modal-footer
             = form.submit 'Save', class: 'btn btn-primary'
             button.btn.btn-secondary[type="button" data-bs-dismiss="modal"]
