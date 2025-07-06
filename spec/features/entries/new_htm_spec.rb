@@ -11,7 +11,7 @@ RSpec.feature 'New entry page', type: :feature do
 
       expect(page).to have_content 'New Entry'
 
-      expect(page).to have_content  'New author'
+      expect(page).to have_content 'New author'
     end
   end
 end

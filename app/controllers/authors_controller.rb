@@ -4,7 +4,11 @@ class AuthorsController < ApplicationController
   def create
     @author = Author.new(author_params)
     if @author.save
-      render new_entry_path, notice: 'Author successfully created.'
+      flash.now[:notice] = t('authors.create_success')
+      render turbo_stream: [
+        turbo_stream.update('new_author_modal', partial: 'new_modal_link'),
+        turbo_stream.update('notices', partial: 'shared/notices')
+      ]
     else
       render :new_modal, status: :unprocessable_entity
     end
