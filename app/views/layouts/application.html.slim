@@ -5,5 +5,7 @@ html
     = render 'layouts/navigation/header'
     = render 'layouts/navigation/sidenav'
     main
+      #notices
+        = render 'shared/notices'
       = yield
     = render 'layouts/footer'
