@@ -101,6 +101,7 @@ GEM
       sass-embedded (~> 1.63)
     date (3.4.1)
     diff-lcs (1.6.2)
+    docile (1.4.1)
     drb (2.2.3)
     erb (5.0.1)
     erubi (1.13.1)
@@ -306,6 +307,12 @@ GEM
     sass-embedded (1.89.2-x86_64-linux-musl)
       google-protobuf (~> 4.31)
     securerandom (0.4.1)
+    simplecov (0.22.0)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.13.1)
+    simplecov_json_formatter (0.1.4)
     slim (5.2.1)
       temple (~> 0.10.0)
       tilt (>= 2.1.0)
@@ -375,6 +382,7 @@ DEPENDENCIES
   rails (~> 8.0.1)
   rspec-rails
   rubocop-rails
+  simplecov
   slim
   slim_lint
   sqlite3
